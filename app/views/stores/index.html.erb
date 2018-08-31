@@ -1,0 +1,11 @@
+Check out these cool store yo!
+
+<li><%=link_to "Create a New Store", new_store_path%></li>
+
+
+This is called echoing 
+<ul>
+  <% @stores.each do |store|%>
+    <li><%=link_to store.name, store_path(store)%></li>
+  <%end%>
+</ul>
