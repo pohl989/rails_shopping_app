@@ -1,5 +1,6 @@
 class Store < ApplicationRecord
   # relations
+  has_one :address
   has_many :lists
   before_destroy :delete_associations
 
